@@ -1,0 +1,266 @@
+.poster, .game{
+    width: 15rem;
+    margin: 1rem;
+}
+*{
+    margin: 0;
+    max-width: 100%;
+    color:beige;
+}
+body{
+  max-width: 100%;
+  background-image: linear-gradient(to bottom, #272635, #333d4f, #3d556a, #466f82, #528a97);
+}
+#Other{
+  margin-top: 0 !important;
+}
+#mail{
+  width: 6rem;
+}
+a{
+text-decoration: none;
+}
+
+
+#presentation{
+    background-image: url(pictures/me.jpg);
+    height: 45vh;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-attachment: fixed;
+    background-size: 250%;
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+#presentation h1{
+  font-family: 'Alkatra', cursive;
+  padding-top: 25%;
+
+}
+#presentation p{
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+}
+header{
+    display: flex;
+    width: 100%;
+}
+header a{
+    text-align: center;
+    width: 33%;
+    padding: 1.5rem 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+}
+.logo{
+    width: 4rem;
+}
+#FirstLineHobby , #Other{
+  width: 25rem;
+  margin: 0 auto;
+  text-align: center;
+  color:beige;
+}
+article div, #Other, footer{
+  margin-top: 0.7rem;
+}
+h2,h3{
+  font-size: 3rem;
+  font-family: 'Alkatra', cursive;
+}
+p{
+  font-size: 1.7rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  max-width: 100%;
+}
+#Other{
+  width: 100%;
+  padding-top: 1rem;
+  margin-top: 0;
+
+}
+
+#Other div{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+#Other div p{
+  text-align: left;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  width: 45%;
+  font-family: 'Lato', sans-serif;
+}
+footer{
+  margin-top: 0;
+  padding-top: 1rem;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+footer p{
+  width: 99%;
+}
+#contact{
+  text-align: center;
+  margin-top: 0;
+  padding-top: 1rem;
+}
+#contact div{
+  display: flex;
+  justify-content: space-around;
+}
+
+.carousel-container {
+  width: 15rem; /* La largeur de votre carrousel */
+  overflow: hidden; /* Pour cacher les images qui dépassent */
+  margin: auto;
+}
+
+.carousel-slide {
+  display: flex; /* Pour afficher les images en ligne */
+  width: 75rem; /* 5 images x 500 pixels chacune */
+  animation: carousel 20s infinite; /* Animer le défilement des images */
+}
+
+.carousel-slide img {
+  width: 15rem; /* La largeur de chaque image */
+  height: auto; /* Ajuster la hauteur pour garder le ratio d'aspect */
+  object-fit: cover; /* Pour couvrir toute la surface de l'image */
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0); /* Début du carrousel */
+  }
+  100% {
+    transform: translateX(-60rem); /* Fin du carrousel */
+  }
+}
+
+@media screen and (min-width: 400px) {
+  #presentation{
+    height: 65vh;
+  }
+  h2,h3{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1.2rem !important;
+  }
+  h1{
+   font-size: 2.5rem;
+  }
+  header a{
+    font-size: 1.5rem;
+  }
+  
+}
+
+@media screen and (min-width:500px){
+  #presentation{
+    height: 65vh;
+    background-size: 170%;
+  }
+}
+@media screen and (min-width: 600px){
+  #presentation{
+    height: 75vh;
+    background-size: 150%;
+  }
+  #presentation h1{
+    padding-top: 30%;
+  }
+  #Other div{
+    justify-content: space-around;
+  }
+  #Other div p{
+    width: 35%;
+  }
+  #presentation h1{
+    padding-top: 20%;
+  }
+
+}
+
+@media screen and (min-width: 800px){
+  .poster, .game{
+    width: 12rem;
+  }
+}
+@media  screen and (min-width: 1000px) {
+  #presentation{
+    height: 70vh;
+    background-size: 100%;
+  }
+  #presentation h1{
+    padding-top: 15%;
+  }
+  article{
+    width: 100%;
+  }
+  #FirstLineHobby{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 90%;
+    justify-content: space-between;
+  }
+  #Gaming{
+    width: 40%;
+  }
+  #Show{
+    width: 55%;
+  }
+  #Show div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  #Show div div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .poster, .game{
+    width: 8rem;
+  }
+  #Other div p{
+    width: auto;
+  }
+
+  .carousel-container {
+    width: 12rem; /* La largeur de votre carrousel */
+    overflow: hidden; /* Pour cacher les images qui dépassent */
+    margin: auto;
+  }
+  
+  .carousel-slide {
+    display: flex; /* Pour afficher les images en ligne */
+    width: 60rem; /* 5 images x 500 pixels chacune */
+    animation: carousel 20s infinite; /* Animer le défilement des images */
+  }
+  
+  .carousel-slide img {
+    width: 12rem; /* La largeur de chaque image */
+    height: auto; /* Ajuster la hauteur pour garder le ratio d'aspect */
+    object-fit: cover; /* Pour couvrir toute la surface de l'image */
+  }
+  
+  @keyframes carousel {
+    0% {
+      transform: translateX(0); /* Début du carrousel */
+    }
+    100% {
+      transform: translateX(-48rem); /* Fin du carrousel */
+    }
+  }
+
+}
+
